@@ -230,20 +230,6 @@ F 3 "~" H 4050 3450 50  0001 C CNN
 	1    4050 3450
 	1    0    0    -1  
 $EndComp
-$Comp
-L Regulator_Linear:L7805 U?
-U 1 1 5E0C3D6D
-P 4450 3200
-AR Path="/5E0C3D6D" Ref="U?"  Part="1" 
-AR Path="/5DAEEEF4/5E0C3D6D" Ref="U?"  Part="1" 
-AR Path="/5E09F41D/5E0C3D6D" Ref="U2"  Part="1" 
-F 0 "U2" H 4450 3442 50  0000 C CNN
-F 1 "L7805" H 4450 3351 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-89-3" H 4475 3050 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 4450 3150 50  0001 C CNN
-	1    4450 3200
-	1    0    0    -1  
-$EndComp
 Text GLabel 4950 3200 2    50   Input ~ 0
 5V_ANALOG
 Wire Wire Line
@@ -352,7 +338,7 @@ Connection ~ 2800 1900
 Wire Wire Line
 	2800 1900 3150 1900
 $Comp
-L Regulator_Linear:L78L33_SO8 U3
+L DDSFunctionGenerator-rescue:L78L33_SO8-Regulator_Linear U3
 U 1 1 5E133702
 P 4550 1900
 F 0 "U3" H 4550 2142 50  0000 C CNN
@@ -360,6 +346,17 @@ F 1 "L78L33_SO8" H 4550 2051 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4650 2100 50  0001 C CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 4750 1900 50  0001 C CNN
 	1    4550 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L78L08_SOT89 U2
+U 1 1 60CEFFB6
+P 4450 3200
+F 0 "U2" H 4450 3442 50  0000 C CNN
+F 1 "L78L08_SOT89" H 4450 3351 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 4450 3400 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 4450 3150 50  0001 C CNN
+	1    4450 3200
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

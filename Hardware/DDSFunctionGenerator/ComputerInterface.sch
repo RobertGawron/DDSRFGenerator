@@ -14,11 +14,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:USB_B_Micro J?
+L DDSFunctionGenerator-rescue:USB_B_Micro-Connector J?
 U 1 1 5DDD73C9
 P 3250 3800
 AR Path="/5DD5C7F6/5DDD73C9" Ref="J?"  Part="1" 
 AR Path="/5DD5CD1D/5DDD73C9" Ref="J2"  Part="1" 
+AR Path="/5DDD73C9" Ref="J2"  Part="1" 
 F 0 "J2" H 3307 4267 50  0000 C CNN
 F 1 "USB_B_Micro" H 3307 4176 50  0000 C CNN
 F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 3400 3750 50  0001 C CNN

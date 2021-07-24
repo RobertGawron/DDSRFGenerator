@@ -13,17 +13,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Mechanical:MountingHole_Pad H1
-U 1 1 5FD89BBF
-P 5400 3550
-F 0 "H1" H 5500 3599 50  0000 L CNN
-F 1 "MountingHole_Pad" H 5500 3508 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad_Via" H 5400 3550 50  0001 C CNN
-F 3 "~" H 5400 3550 50  0001 C CNN
-	1    5400 3550
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	5400 3650 5400 3700
 $Comp
 L power:GND #PWR087
 U 1 1 5FD89DD3
@@ -35,6 +26,15 @@ F 3 "" H 5400 3700 50  0001 C CNN
 	1    5400 3700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5400 3650 5400 3700
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5FD89BBF
+P 5400 3550
+F 0 "H1" H 5500 3599 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5500 3508 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 5400 3550 50  0001 C CNN
+F 3 "~" H 5400 3550 50  0001 C CNN
+	1    5400 3550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

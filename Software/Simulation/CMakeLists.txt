@@ -6,7 +6,7 @@ set(CMAKE_SYSTEM_NAME Generic) # No linux target etc
 # Prevent default configuration
 set(CMAKE_C_FLAGS_INIT "")
 set(CMAKE_EXE_LINKER_FLAGS_INIT "")
-project(STM8Blink C)
+project(DDSGenerator C)
 SET(CMAKE_C_FLAGS "-shared ")
 
 set(CMAKE_STATIC_LIBRARY_PREFIX "")
@@ -19,17 +19,18 @@ set(CMAKE_EXECUTABLE_SUFFIX ".so")
 set(CMAKE_LINK_LIBRARY_SUFFIX ".lib")
 set(CMAKE_DL_LIBS "")
 
-set(FORTH_LIB_PATH "${CMAKE_SOURCE_DIR}/../Libraries/zForth/src/zforth")
-set(U8G2_LIB_PATH "${CMAKE_SOURCE_DIR}/../Libraries/u8g2/csrc")
+set(FORTH_LIB_PATH "${CMAKE_SOURCE_DIR}/../Common/Libraries/zForth/src/zforth")
+set(U8G2_LIB_PATH "${CMAKE_SOURCE_DIR}/../Common/Libraries/u8g2/csrc")
+set(BUSINESSLOGIC_PATH "${CMAKE_SOURCE_DIR}/../Common/BusinessLogic")
 
 include_directories(${CMAKE_SOURCE_DIR})
 include_directories(${FORTH_LIB_PATH})
 include_directories(${U8G2_LIB_PATH})
-
+include_directories(${BUSINESSLOGIC_PATH})
 
 add_library(forth_lib STATIC
         ${FORTH_LIB_PATH}/zforth.c
-        dds_zforth_callbacks.c)
+        ${BUSINESSLOGIC_PATH}/dds_zforth_callbacks.c)
 
 
 add_library(u8g2_lib STATIC
@@ -133,13 +134,13 @@ add_library(u8g2_lib STATIC
 
 add_executable(simulation
         simulation.c
-        dds_business_logic_wrapper.c
-        dds_scpi_gate.c
-        dds_forth_scripts_loader_sim.c
-        dds_user_interface.c
         dds_u8g2_callbacks_sim.c
-        dds_view_main.c
-        dds_view_settings.c)
+        dds_forth_scripts_loader_sim.c
+        ${BUSINESSLOGIC_PATH}/dds_business_logic_wrapper.c
+        ${BUSINESSLOGIC_PATH}/dds_scpi_gate.c
+        ${BUSINESSLOGIC_PATH}/dds_user_interface.c
+        ${BUSINESSLOGIC_PATH}/dds_view_main.c
+        ${BUSINESSLOGIC_PATH}/dds_view_settings.c)
 
 
 target_link_libraries(simulation
