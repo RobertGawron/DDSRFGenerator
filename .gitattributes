@@ -1,5 +1,10 @@
 Software/TargetFirmware/Drivers/* linguist-vendored
 Software/NUCLEO-F091RC/Drivers/* linguist-vendored
-Software/Common/Libraries/* linguist-vendored
+Software/Common/Libraries/ linguist-vendored
+# it seems that Github doesn't allow recursive ignore of files
+Software/Common/Libraries/u8g2/tools/font/otf2bdf/maps/* linguist-vendored
+Software/Common/Libraries/u8g2/sys/arduino/* linguist-vendored
+Software/Common/Libraries/u8g2/sys/arduino/*/* linguist-vendored
+Software/Common/Libraries/u8g2/sys/arduino/*/*/*/* linguist-vendored
 # GitHub's language statistics module can't recognize LTSpice files, so just ignore them.
 Simulation/LTSPice/* linguist-vendored
