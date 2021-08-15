@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name NumericallyControlledOscillator)(type Legacy)(uri ${KIPRJMOD}/NumericallyControlledOscillator.lib)(options "")(descr ""))
-  (lib (name DDSFunctionGenerator-rescue)(type Legacy)(uri ${KIPRJMOD}/DDSFunctionGenerator-rescue.lib)(options "")(descr ""))
-)
