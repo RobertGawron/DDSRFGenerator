@@ -1,5 +1,5 @@
-Software/TargetFirmware/Drivers/* linguist-vendored
-Software/NUCLEO-F091RC/Drivers/* linguist-vendored
+Software/TargetFirmware/Drivers/** linguist-vendored
+Software/NUCLEO-F091RC/Drivers/** linguist-vendored
 # use ** to exclude recursively
 # see https://stackoverflow.com/questions/42544813/paths-not-excluded-from-github-language-statistics
 Software/Common/Libraries/** linguist-vendored
