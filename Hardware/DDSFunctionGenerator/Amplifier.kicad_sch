@@ -912,7 +912,7 @@
     (pin "1" (uuid 1e20cb63-2c79-44cc-b5a2-bc13057a2423))
   )
 
-  (symbol (lib_id "power:GND") (at 78.74 72.39 0)
+  (symbol (lib_id "power:GND") (at 78.74 72.39 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005db7a4db)
     (property "Reference" "#PWR041" (id 0) (at 78.74 78.74 0)
@@ -944,7 +944,7 @@
     (pin "1" (uuid 474d1dc1-82a7-4596-a707-bc550b74ca0b))
   )
 
-  (symbol (lib_id "power:GND") (at 91.44 72.39 0)
+  (symbol (lib_id "power:GND") (at 91.44 72.39 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005db7a4ce)
     (property "Reference" "#PWR042" (id 0) (at 91.44 78.74 0)
@@ -1120,7 +1120,7 @@
     (pin "1" (uuid 0a47ef49-3c2f-4bc5-898c-1ab0f51681cb))
   )
 
-  (symbol (lib_id "Device:L") (at 85.09 62.23 90)
+  (symbol (lib_id "Device:L") (at 85.09 62.23 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005db7a4e1)
     (property "Reference" "L9" (id 0) (at 85.09 57.404 90))
@@ -1135,7 +1135,7 @@
     (pin "2" (uuid 77f48e5e-0544-45c2-9f1c-d0f47f909bb5))
   )
 
-  (symbol (lib_id "Device:R") (at 157.48 86.36 0)
+  (symbol (lib_id "Device:R") (at 157.48 86.36 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005de46460)
     (property "Reference" "R3" (id 0) (at 161.29 85.09 90))
@@ -1150,7 +1150,7 @@
     (pin "2" (uuid 7d4b5ba7-4ad2-48b2-b591-d424c9c185f7))
   )
 
-  (symbol (lib_id "Device:R") (at 199.39 113.03 0)
+  (symbol (lib_id "Device:R") (at 199.39 113.03 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005dd22fa2)
     (property "Reference" "R44" (id 0) (at 203.2 111.76 90))
@@ -1203,7 +1203,7 @@
     (pin "2" (uuid f60c82ac-d397-44b1-b13a-a9980ab67bb9))
   )
 
-  (symbol (lib_id "Device:C") (at 78.74 67.31 0)
+  (symbol (lib_id "Device:C") (at 78.74 67.31 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005db7a4e7)
     (property "Reference" "C33" (id 0) (at 81.661 66.1416 0)
@@ -1241,7 +1241,7 @@
     (pin "2" (uuid 569ee437-a638-4fbe-b455-45536e7bd6ee))
   )
 
-  (symbol (lib_id "Device:C") (at 91.44 67.31 0)
+  (symbol (lib_id "Device:C") (at 91.44 67.31 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005db7a4c8)
     (property "Reference" "C34" (id 0) (at 94.361 66.1416 0)
