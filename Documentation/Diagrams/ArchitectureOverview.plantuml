@@ -1,0 +1,38 @@
+@startuml
+
+artifact "Power Supply\n(5V DC)" as power_supply
+
+package "DDS Function Generator" as dds_function_generator {
+    artifact  "DDS Synthetizer\n(AD9832)" as dds_synthetizer
+    artifact  "RF Amplifier\n(AD8325)" as rf_amplifier
+    artifact  "Attenuators" as attenuators
+    artifact  "Microcontroller\n(STM32F030K6Tx)" as microcontroller
+    artifact  "SCPI Interface\n(Command and Control)" as controlling_interface
+    artifact  "User Interface\n(LCD + 4 buttons)" as user_interface
+}
+
+' Power supply to the DDS Function Generator
+power_supply -down-> dds_function_generator : "5V Power Supply"
+
+' Define the Output interfaces with more clarity
+interface "50 Ohm Output" as out_dds_50_ohm
+interface "HMI Interface" as user_hmi_interface
+interface "SCPI Command Interface" as scpi_command_interface
+
+' Define the connections and relationships between the artifacts
+dds_synthetizer --> rf_amplifier : "Generated Signal"
+rf_amplifier --> attenuators : "Amplified Signal"
+attenuators --> out_dds_50_ohm : "50 Ohm Output"
+
+microcontroller <--> controlling_interface : "SCPI Control"
+microcontroller --> dds_synthetizer : "Frequency Control"
+microcontroller --> rf_amplifier : "Amplitude Control"
+microcontroller --> attenuators : "Attenuation Control"
+
+microcontroller <--> user_interface : "User Controls and Display"
+
+' Interface connections
+user_interface <-down---> user_hmi_interface : "User Interaction"
+controlling_interface <-down---> scpi_command_interface : "Command Input/Output"
+
+@enduml
